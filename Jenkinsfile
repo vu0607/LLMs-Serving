@@ -4,21 +4,21 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Running tests...'
-                }
+                echo 'Building...'
             }
+        }
         stage('Test') {
             steps {
-                echo 'Building image for deployment...'
-                }
+                echo 'Testing...'
             }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                }
             }
         }
     }
+
     post {
         success {
             echo 'Pipeline success'
@@ -27,5 +27,4 @@ pipeline {
             echo 'Pipeline Failure'
         }
     }
-
 }
