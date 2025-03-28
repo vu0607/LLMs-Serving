@@ -1,0 +1,6 @@
+lmdeploy
+nest_asyncio
+fastapi
+uvicorn
+pydantic
+transformers~=4.46.3
